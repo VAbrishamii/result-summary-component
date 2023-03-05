@@ -1,0 +1,165 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-size: 1rem;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: aliceblue;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.muted{
+    color: #6c757d;
+}
+.light{
+    color: #adb5bd;
+}
+.result h2{
+    color: #f8f9fa;
+}
+
+.container{
+    width: 100%;
+    max-width: 700px;
+    /* height: 80vh; */
+    text-align: center;
+    border-radius: 25px;
+    display: flex;
+    margin: 5rem;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .3);
+}
+.counter{
+    background-image: linear-gradient(to bottom,rgb(4, 4, 163),rgb(167, 167, 231)) ;
+    width: 180px;
+    height: 180px;
+    margin-left: 75px;
+    border-radius: 50%;
+}
+.counter h2{
+    margin-top: 65px;
+    font-size: 70px;
+    color: #f8f9fa;
+    line-height: 0;
+}
+.counter p{
+    margin-top: 0;
+}
+
+
+.result{
+    display: grid;
+    background-color: rgb(4, 4, 218);
+    padding: 18px;
+    border-radius: 25px;
+    text-align: center;
+    width: 100vw;
+}
+.summary{
+    background-color: aliceblue;
+    padding: 12px;
+    border-radius: 15px;
+    width: 100vw;
+}
+
+.summary-model p{
+    margin: 0;
+    display:inline-block;
+}
+.summary-model i{
+    margin: 0 10px;
+    font-size: 1.3rem;
+}
+
+.reaction{
+    background-color: rgba(216, 9, 9, 0.1);
+    border-radius: 15px;
+    display: flex;
+    padding: 15px;
+    margin: 0 2rem;
+    justify-content: space-between;
+
+    margin-bottom: 25px;
+}
+
+.reaction span{
+    color: red;
+    margin-right: 5px;
+}
+
+.memory{
+    background-color: rgba(217, 91, 7, 0.1);
+    border-radius: 15px;
+    display: flex;
+    padding: 15px;
+    margin: 0 2rem;
+    justify-content: space-between;
+   
+    margin-bottom: 25px;
+}
+
+.memory span{
+    color: orange;
+    margin-right: 5px;
+}
+
+.verbal{
+    background-color: rgba(22, 255, 22, 0.1);
+    border-radius: 15px;
+    display: flex;
+    padding: 15px;
+    margin: 0 2rem;
+    justify-content: space-between;
+
+    margin-bottom: 25px;
+}
+.verbal span{
+    color: green;
+    margin-right: 5px;
+}
+.visual{
+    background-color: rgba(11, 90, 246, 0.1);
+    border-radius: 15px;
+    display: flex;
+    padding: 15px;
+    margin: 0 2rem;
+    justify-content: space-between;
+
+    margin-bottom: 25px;
+}
+.visual span{
+    color: blue;
+    margin-right: 5px;
+}
+.btn{
+    width: 20vw;
+    border: none;
+    border-radius: 25px;
+    background-color: rgb(22, 22, 175);
+    padding: 12px;
+    font-size: 1rem;
+    text-align: center;
+    color: white;
+    margin-top: 20px;
+    cursor: pointer;
+}
+@media screen and (max-width: 768px){ 
+    .container{
+        display: grid;
+        width: 70vw;
+        height: 132vh;
+    }
+    .result{
+        width: 91%;
+    }
+    .counter{
+        margin-left: 90px;
+ 
+    }
+    .summary{
+        width: 91%;
+    }
+    .btn{
+        width: 80%;
+    }
+}
